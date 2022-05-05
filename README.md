@@ -31,7 +31,9 @@ To shell into it and run the tests:
 Once the container is running, and assuming you've mapped the ports to `80:80`,
 you can go to [http://127.0.0.1/](http://127.0.0.1/).
 
+You can experiment with API requests by using `httpie`. Use the command `https
+http://127.0.0.1` to get started. 
+
 ## Testing
 
-Use `httpie` to send a JSON object in the request body.
-
+To run the test suite: `docker exec -it container-one pytest app/`
