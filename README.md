@@ -27,3 +27,7 @@ To shell into it and run the tests:
 `docker exec -it container-one pytest app/`
 
 
+## Testing
+
+Use `httpie` to send a JSON object in the request body.
+
