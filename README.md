@@ -26,6 +26,10 @@ To shell into it and run the tests:
 
 `docker exec -it container-one pytest app/`
 
+## Running locally
+
+Once the container is running, and assuming you've mapped the ports to `80:80`,
+you can go to [http://127.0.0.1/](http://127.0.0.1/).
 
 ## Testing
 
