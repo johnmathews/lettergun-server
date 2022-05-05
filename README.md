@@ -14,6 +14,12 @@ The API server verifies the SVG image against the original JSON payload and if
 it is valid, used the AxiDraw Python API to plot the SVG image. When the image
 is complete, it notifies the API server, which notifies the webapp.
 
+## Documentation
+
+`http://127.0.0.1/docs`
+`http://127.0.0.1/redoc`
+
+
 ## Docker
 
 Use the following command whilst developing to build and run a docker image
@@ -33,6 +39,8 @@ you can go to [http://127.0.0.1/](http://127.0.0.1/).
 
 You can experiment with API requests by using `httpie`. Use the command `https
 http://127.0.0.1` to get started. 
+
+`http post http://127.0.0.1/api/v1/create/ uid=foo message=foo "variables[0][foo]=foo" paper_size=foo paper_orientation=foo paper_type=foo`
 
 ## Testing
 
