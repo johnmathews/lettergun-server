@@ -32,7 +32,10 @@ def test_valid_payload():
     assert response.status_code == 200
 
 
-def test_invalid_payload():
+def test_missing_field_paper_size():
     response = client.post("/api/v1/create/", json=missing_key)
-    assert response.status_code == 200
+    assert response.json()['detail'][0]['loc'] == ['body', 'paper_size']
+    assert response.json()['detail'][0]['msg'] == 'field required'
+    assert response.json()['detail'][0]['type'] == 'value_error.missing'
+    assert response.status_code == 422
 
