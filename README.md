@@ -16,8 +16,8 @@ is complete, it notifies the API server, which notifies the webapp.
 
 ## Documentation
 
-`http://127.0.0.1/docs`
-`http://127.0.0.1/redoc`
+[http://127.0.0.1/docs](http://127.0.0.1/docs)
+[http://127.0.0.1/redoc](http://127.0.0.1/redoc)
 
 
 ## Docker
@@ -40,7 +40,7 @@ you can go to [http://127.0.0.1/](http://127.0.0.1/).
 You can experiment with API requests by using `httpie`. Use the command `https
 http://127.0.0.1` to get started. 
 
-`http post http://127.0.0.1/api/v1/create/ uid=foo message=foo "variables[0][foo]=foo" paper_size=foo paper_orientation=foo paper_type=foo`
+`http post http://127.0.0.1/api/v1/create/ uid=foo message="Dear {name}, Good bye." "variables[0][name]=Joe" "variables[0][product]=tshirt" paper_size=A6 paper_orientation=landscape paper_type=p1`
 
 ## Testing
 
